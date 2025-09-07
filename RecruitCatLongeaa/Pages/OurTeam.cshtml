@@ -1,0 +1,36 @@
+﻿@page
+@model OurTeamModel
+@{
+    ViewData["Title"] = "Our Team";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Meet Our Team</h1>
+    <p class="text-center lead">We are a group of passionate professionals dedicated to making recruitment seamless and effective.</p>
+
+    <div class="row mt-5">
+        <!-- Team Member 1 -->
+        <div class="col-md-4 text-center">
+            <img src="@Url.Content("~/longeaa.jpg")" alt="Anisa Longe" class="rounded-circle img-fluid mb-3" style="width: 50px; height: 50px;">
+            <h5>Anisa</h5>
+            <p class="text-muted">CEO</p>
+            <p>Anisa leads the team with a vision to revolutionize Henchmen recruitment.</p>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="col-md-4 text-center">
+            <img src="@Url.Content("~/dave.jpg")" alt="Dave" class="rounded-circle img-fluid mb-3" style="width: 100px; height: 100px;">
+            <h5>Dave</h5>
+            <p class="text-muted">CTO</p>
+            <p>Dave drives the technology recruitment to bring the best technology savvy Henchmen to our platform. Dave helped Gru steal the moon!</p>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="col-md-4 text-center">
+            <img src="@Url.Content("~/bob.jpg")" alt="Bob" class="rounded-circle img-fluid mb-3" style="width: 50px; height: 50px;">
+            <h5>Bob</h5>
+            <p class="text-muted">COO</p>
+            <p>Bob ensures smooth operations and customer satisfaction. His contagious smile wins over the hardest Henchmen in the business!</p>
+        </div>
+    </div>
+</div>
