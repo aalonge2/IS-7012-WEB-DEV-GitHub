@@ -1,0 +1,25 @@
+﻿@page
+@model CRUD_BankAccount.Pages.Index1Model
+@{
+}
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic; // Important if IList is used
+using System.Threading.Tasks;
+
+public class IndexModel : PageModel
+{
+private readonly ApplicationDbContext _context; // Your EF Core DbContext
+
+public IndexModel(ApplicationDbContext context)
+{
+_context = context;
+}
+
+public IList<AccountHolder> AccountHolders { get; set; } // <-- Add this property
+
+public async Task OnGetAsync()
+{
+AccountHolders = await _context.AccountHolders.ToListAsync();
+}
+}
