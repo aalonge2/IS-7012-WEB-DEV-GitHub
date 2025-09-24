@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\GitHub\\Web Development\\NewRepo7012\\IS-7012-WEB-DEV-GitHub\\Week 3 BankAccount\\CRUD BankAccount\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6CD45211-E672-4627-9D6A-2D31934884C2}|CRUD BankAccount.csproj|c:\\github\\web development\\newrepo7012\\is-7012-web-dev-github\\week 3 bankaccount\\crud bankaccount\\pages\\index1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6CD45211-E672-4627-9D6A-2D31934884C2}|CRUD BankAccount.csproj|solutionrelative:pages\\index1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6CD45211-E672-4627-9D6A-2D31934884C2}|CRUD BankAccount.csproj|c:\\github\\web development\\newrepo7012\\is-7012-web-dev-github\\week 3 bankaccount\\crud bankaccount\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CD45211-E672-4627-9D6A-2D31934884C2}|CRUD BankAccount.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CD45211-E672-4627-9D6A-2D31934884C2}|CRUD BankAccount.csproj|c:\\github\\web development\\newrepo7012\\is-7012-web-dev-github\\week 3 bankaccount\\crud bankaccount\\pages\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6CD45211-E672-4627-9D6A-2D31934884C2}|CRUD BankAccount.csproj|solutionrelative:pages\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CD45211-E672-4627-9D6A-2D31934884C2}|CRUD BankAccount.csproj|c:\\github\\web development\\newrepo7012\\is-7012-web-dev-github\\week 3 bankaccount\\crud bankaccount\\pages\\index1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6CD45211-E672-4627-9D6A-2D31934884C2}|CRUD BankAccount.csproj|solutionrelative:pages\\index1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CD45211-E672-4627-9D6A-2D31934884C2}|CRUD BankAccount.csproj|c:\\github\\web development\\newrepo7012\\is-7012-web-dev-github\\week 3 bankaccount\\crud bankaccount\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +37,6 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\GitHub\\Web Development\\NewRepo7012\\IS-7012-WEB-DEV-GitHub\\Week 3 BankAccount\\AccountHoldercs\\AccountHolder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CD45211-E672-4627-9D6A-2D31934884C2}|CRUD BankAccount.csproj|c:\\github\\web development\\newrepo7012\\is-7012-web-dev-github\\week 3 bankaccount\\crud bankaccount\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CD45211-E672-4627-9D6A-2D31934884C2}|CRUD BankAccount.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6CD45211-E672-4627-9D6A-2D31934884C2}|CRUD BankAccount.csproj|c:\\github\\web development\\newrepo7012\\is-7012-web-dev-github\\week 3 bankaccount\\crud bankaccount\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{6CD45211-E672-4627-9D6A-2D31934884C2}|CRUD BankAccount.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
@@ -48,7 +48,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -60,7 +60,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\GitHub\\Web Development\\NewRepo7012\\IS-7012-WEB-DEV-GitHub\\Week 3 BankAccount\\CRUD BankAccount\\Pages\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
@@ -79,14 +79,14 @@
               "RelativeDocumentMoniker": "Pages\\Edit.cshtml",
               "ToolTip": "C:\\GitHub\\Web Development\\NewRepo7012\\IS-7012-WEB-DEV-GitHub\\Week 3 BankAccount\\CRUD BankAccount\\Pages\\Edit.cshtml",
               "RelativeToolTip": "Pages\\Edit.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABcAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-14T19:49:05.124Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Index1.cshtml",
               "DocumentMoniker": "C:\\GitHub\\Web Development\\NewRepo7012\\IS-7012-WEB-DEV-GitHub\\Week 3 BankAccount\\CRUD BankAccount\\Pages\\Index1.cshtml",
               "RelativeDocumentMoniker": "Pages\\Index1.cshtml",
@@ -99,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AccountHolder.cs",
               "DocumentMoniker": "C:\\GitHub\\Web Development\\NewRepo7012\\IS-7012-WEB-DEV-GitHub\\Week 3 BankAccount\\AccountHoldercs\\AccountHolder.cs",
               "RelativeDocumentMoniker": "..\\AccountHoldercs\\AccountHolder.cs",
@@ -112,7 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\GitHub\\Web Development\\NewRepo7012\\IS-7012-WEB-DEV-GitHub\\Week 3 BankAccount\\CRUD BankAccount\\Pages\\AccountHolders\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\AccountHolders\\Index.cshtml",
@@ -125,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "BankAccount.csproj",
               "DocumentMoniker": "C:\\GitHub\\Web Development\\NewRepo7012\\IS-7012-WEB-DEV-GitHub\\Week 3 BankAccount\\BankAccount\\BankAccount.csproj",
               "RelativeDocumentMoniker": "..\\BankAccount\\BankAccount.csproj",
@@ -138,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\GitHub\\Web Development\\NewRepo7012\\IS-7012-WEB-DEV-GitHub\\Week 3 BankAccount\\CRUD BankAccount\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
@@ -151,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AccountHolder.cs",
               "DocumentMoniker": "C:\\GitHub\\Web Development\\NewRepo7012\\IS-7012-WEB-DEV-GitHub\\Week 3 BankAccount\\CRUD BankAccount\\AccountHolder.cs",
               "RelativeDocumentMoniker": "AccountHolder.cs",
@@ -176,7 +176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\GitHub\\Web Development\\NewRepo7012\\IS-7012-WEB-DEV-GitHub\\Week 3 BankAccount\\CRUD BankAccount\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",

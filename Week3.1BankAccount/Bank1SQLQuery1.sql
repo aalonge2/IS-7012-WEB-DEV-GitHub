@@ -1,0 +1,27 @@
+USE master;
+GO
+
+IF DB_ID('AP') IS NOT NULL
+    DROP DATABASE AP;
+GO
+
+CREATE DATABASE AP;
+GO
+
+USE AP;
+GO
+
+CREATE TABLE AccountHolder1Updates (
+    AccountHolderName VARCHAR(50) NULL,
+    EmailAddress VARCHAR(50) NULL,
+    AccountBalance VARCHAR(50) NULL,
+    PhoneNumber VARCHAR(50) NULL,
+    Address VARCHAR(50) NULL
+);
+GO
+
+USE master;
+GO
+
+ALTER DATABASE AP SET READ_WRITE;
+GO

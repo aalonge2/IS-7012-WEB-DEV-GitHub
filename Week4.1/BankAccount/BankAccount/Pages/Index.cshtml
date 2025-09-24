@@ -1,0 +1,58 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Account List";
+}
+
+<h1>Account List</h1>
+
+<form method="get" class="row g-2 mb-3">
+    <div class="col-auto">
+        <input type="text" name="SearchString" value="@Model.SearchString" class="form-control" placeholder="Search by name or email" />
+    </div>
+    <div class="col-auto">
+        <button class="btn btn-primary">Search</button>
+    </div>
+    <div class="col-auto">
+        <a class="btn btn-success" href="/Accounts/Create">New Account</a>
+    </div>
+</form>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Account Number</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Type</th>
+            <th>Balance</th>
+            <th>Date Created</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Accounts != null && Model.Accounts.Any())
+        {
+            foreach (var a in Model.Accounts)
+            {
+                <tr>
+                    <td>@a.AccountNumber</td>
+                    <td>@a.FullName</td>
+                    <td>@a.Email</td>
+                    <td>@a.AccountType</td>
+                    <td>@string.Format("{0:C}", a.Balance)</td>
+                    <td>@a.DateCreated.ToString("yyyy-MM-dd")</td>
+                    <td>
+                        <a class="btn btn-sm btn-outline-primary" href="/Accounts/Details?id=@a.Id">Details</a>
+                        <a class="btn btn-sm btn-outline-secondary" href="/Accounts/Edit?id=@a.Id">Edit</a>
+                        <a class="btn btn-sm btn-outline-danger" href="/Accounts/Delete?id=@a.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr><td colspan="7" class="text-muted">No accounts available.</td></tr>
+        }
+    </tbody>
+</table>

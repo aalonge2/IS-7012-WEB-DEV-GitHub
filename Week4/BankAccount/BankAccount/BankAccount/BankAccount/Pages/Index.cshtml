@@ -1,0 +1,44 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Accounts";
+}
+
+<h1>Accounts</h1>
+
+<p>
+    <a class="btn btn-primary" href="/CreateAccount">Create Account</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Number</th>
+            <th>Owner</th>
+            <th>Balance</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Accounts != null && Model.Accounts.Any())
+        {
+            foreach (var acc in Model.Accounts)
+            {
+                <tr>
+                    <td>@acc.Number</td>
+                    <td>@acc.Owner</td>
+                    <td>@string.Format("{0:C}", acc.Balance)</td>
+                    <td>
+                        <a class="btn btn-sm btn-outline-primary" href="/AccountDetails?id=@acc.Id">Open</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="4" class="text-muted">No accounts found.</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,24 @@
+﻿@page
+@model DeleteModel
+@{
+    ViewData["Title"] = "Delete Account";
+}
+
+<h1>Delete Account</h1>
+
+@if (Model.Account == null)
+{
+    <div class="alert alert-warning">Account not found.</div>
+}
+else
+{
+    <div class="alert alert-danger">
+        <p>Are you sure you want to delete the account <strong>@Model.Account.AccountNumber</strong> - <strong>@Model.Account.FullName</strong>?</p>
+    </div>
+
+    <form method="post">
+        <input type="hidden" asp-for="Account.Id" />
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a class="btn btn-secondary" href="/">Cancel</a>
+    </form>
+}

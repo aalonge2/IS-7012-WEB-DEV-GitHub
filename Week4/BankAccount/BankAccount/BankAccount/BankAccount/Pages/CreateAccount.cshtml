@@ -1,0 +1,39 @@
+﻿@page
+@model CreateAccountModel
+@{
+    ViewData["Title"] = "Create Account";
+}
+
+<h1>Create Account</h1>
+
+<form method="post" class="mt-3">
+    <div class="mb-3">
+        <label asp-for="Owner" class="form-label"></label>
+        <input asp-for="Owner" class="form-control" />
+        <span asp-validation-for="Owner" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="InitialBalance" class="form-label"></label>
+        <input asp-for="InitialBalance" class="form-control" />
+        <span asp-validation-for="InitialBalance" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="SelectedService" class="form-label">Service</label>
+        <select asp-for="SelectedService" class="form-select">
+            <option value="">-- Select Service --</option>
+            <option>Travelers cheques</option>
+            <option>Transfers</option>
+            <option>Wire Transfers</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-success">Create</button>
+    <a class="btn btn-secondary" href="/Index">Cancel</a>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert alert-danger mt-3">@Model.ErrorMessage</div>
+}

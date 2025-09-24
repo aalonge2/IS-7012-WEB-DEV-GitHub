@@ -1,0 +1,48 @@
+﻿@page
+@model CreateModel
+@{
+    ViewData["Title"] = "Create Account";
+}
+
+<h1>Create Account</h1>
+
+<form method="post" class="row g-3">
+    <div class="col-md-6">
+        <label asp-for="Account.FullName" class="form-label"></label>
+        <input asp-for="Account.FullName" class="form-control" />
+        <span asp-validation-for="Account.FullName" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-6">
+        <label asp-for="Account.Email" class="form-label"></label>
+        <input asp-for="Account.Email" class="form-control" />
+        <span asp-validation-for="Account.Email" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-4">
+        <label asp-for="Account.AccountNumber" class="form-label"></label>
+        <input asp-for="Account.AccountNumber" class="form-control" />
+        <span asp-validation-for="Account.AccountNumber" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-4">
+        <label asp-for="Account.AccountType" class="form-label"></label>
+        <select asp-for="Account.AccountType" class="form-select" asp-items="Html.GetEnumSelectList<Models.AccountType>()"></select>
+        <span asp-validation-for="Account.AccountType" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-4">
+        <label asp-for="InitialDeposit" class="form-label">Initial Deposit (optional)</label>
+        <input asp-for="InitialDeposit" class="form-control" />
+        <span asp-validation-for="InitialDeposit" class="text-danger"></span>
+    </div>
+
+    <div class="col-12">
+        <button type="submit" class="btn btn-success">Create</button>
+        <a class="btn btn-secondary" href="/">Cancel</a>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
